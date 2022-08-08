@@ -1,8 +1,13 @@
 function newGame() {
     game = ['', '', '', '', '', '', '', '', ''];
+    currentPlayer = 'X';
     for(let x=0; x<game.length; x++){
         document.getElementById(x).innerHTML = game[x];
     }
+    for(let x=0; x<9; x++){
+        document.getElementById(x).addEventListener('click', function() {handleEvent(x)}, {once: true});
+    }
+    document.getElementById('winner').innerHTML = "";
 }
 
 let handleEvent =  function(id) {
@@ -86,12 +91,6 @@ function tie() {
 }
 
 
-
 let game = [];
-newGame();
-
 let currentPlayer = 'X';
-
-for(let x=0; x<9; x++){
-    document.getElementById(x).addEventListener('click', function() {handleEvent(x)}, {once: true});
-}
+newGame();

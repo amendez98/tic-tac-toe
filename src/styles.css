@@ -1,5 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+}
+
+.title {
+    flex: 1;
+}
+
+.gameboard {
+    flex: 1;
+}
+
+.winner {
+    flex: 1;
+}
+
+.newGame {
+    flex: 1;
+}
+
 td {
     border: 1px solid black;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: xx-large;
 }
