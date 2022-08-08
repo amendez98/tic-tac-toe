@@ -1,1 +1,1 @@
-Tic-Tac-Toe Application
+Simple Tic-Tac-Toe Application
